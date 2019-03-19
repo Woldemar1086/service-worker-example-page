@@ -1,0 +1,10 @@
+# common
+.DS_Store
+.zip
+
+# node dependencies
+node_modules
+npm-debug.log
+.idea
+package-lock.json
+src.map
