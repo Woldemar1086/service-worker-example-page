@@ -110,7 +110,7 @@ self.addEventListener('fetch', function(event) {
 
                         caches.open(APPCACHE)
                             .then(function(cache) {
-                                cache.put(event.request, responseToCache);
+                                cache.put(event.request, responseForCache);
                                 console.log(`Responese was added to cache`);
                             });
 
