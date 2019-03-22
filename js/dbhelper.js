@@ -161,8 +161,10 @@ class DBHelper {
     const marker = new L.marker([restaurant.latlng.lat, restaurant.latlng.lng],
       {title: restaurant.name,
       alt: restaurant.name,
-      url: DBHelper.urlForRestaurant(restaurant)
+      url: DBHelper.urlForRestaurant(restaurant),
+      attributionControl: false
       })
+      marker.tabIndex = -1;
       marker.addTo(newMap);
     return marker;
   } 
